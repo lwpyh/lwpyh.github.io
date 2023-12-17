@@ -81,53 +81,97 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
-h2 {
-  margin: 0;
-  font-weight: normal;
+heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
 }
 
-.papertitle {
+papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 700
 }
 
-.name {
-  padding-top: 20px;
-  margin: 0;
+name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.section {
+  width: 100%;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.box {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  vertical-align: middle;
+}
+
+.highlight-description {
+  color: blue;
+}
+
+.clear {
+  clear: both;
+}
+
+.left {
+  float: left;
+  width: 25%;
+}
+.right {
+  float: right;
+  width: 75%;
+}
+#profile {
+  width: 75%;
+  float: left;
+}
+#profile_photo {
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 633px) {
+  .left {
+    display: none;
+  }
+  .right {
+    width: 100%;
+  }
+  #profile {
+    width: 100%;
+  }
+  #profile_photo {
+    display: none;
+  }
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
 }
 
 span.highlight {
